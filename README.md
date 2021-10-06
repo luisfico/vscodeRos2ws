@@ -110,3 +110,34 @@ VSCode will build the dockerfile inside of `.devcontainer` for you.  If you open
 ```
 ```
     ros2 run simple_subscriber subscriber_main
+```
+
+### ---------------- MAIN COMMANDS---------------- !!!
+
+ - To build ROS2 project
+
+        $ colcon build && source install/local_setup.sh
+
+ - Run a ROS2 node
+
+        $ ros2 run <package_name> <executable_name>
+
+ - Run a ROS2 launhcer (multiple nodes)
+
+        $ ros2 launch <package_name> <script_name>.launch.py
+
+ - List running ROS2 nodes
+
+        $ ros2 node list
+
+ - List visible topic names (a topic is visible if at least 1 node is publishing or subscribing to it)
+
+        $ ros2 topic list
+
+ - Echo what's published on a topic
+
+        $ ros2 topic echo <topic_name>
+
+ - Show ROS2 nodes graph
+
+        $ ros2 run rqt_graph rqt_graph

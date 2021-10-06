@@ -5,7 +5,7 @@ This template will get you set up using ROS2 with VSCode as your IDE.
 See [how I develop with vscode and ros2](https://www.allisonthackston.com/articles/vscode_docker_ros2.html) for a more in-depth look on how to use this workspace.
 
 ## Features
-
+a
 ### Style
 
 ROS2-approved formatters are included in the IDE.  
@@ -122,7 +122,7 @@ VSCode will build the dockerfile inside of `.devcontainer` for you.  If you open
 
         $ ros2 run <package_name> <executable_name>
 
- - Run a ROS2 launhcer (multiple nodes)
+ - Run a ROS2 launcher (multiple nodes)
 
         $ ros2 launch <package_name> <script_name>.launch.py
 
@@ -141,3 +141,16 @@ VSCode will build the dockerfile inside of `.devcontainer` for you.  If you open
  - Show ROS2 nodes graph
 
         $ ros2 run rqt_graph rqt_graph
+
+
+### ---------------- Additional tips---------------- !!!
+
+To show the git branch with colours in terminal Bash prompt : 
+
+        $ gedit ~/.bashrc 
+
+Adding this to .bashrc:
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}

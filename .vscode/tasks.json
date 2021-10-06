@@ -14,7 +14,7 @@
                 "isDefault": true
             },
             "problemMatcher": "$gcc"
-        }        
+        },        
         {
             "label": "build",
             "detail": "Build workspace (default)",

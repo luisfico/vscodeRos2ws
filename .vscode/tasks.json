@@ -5,6 +5,17 @@
     "tasks": [
         // Build tasks
         {
+            "label": "fast build",
+            "detail": "Build workspace (fast)",
+            "type": "shell",
+            "command": "colcon build && source install/local_setup.sh",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc"
+        }        
+        {
             "label": "build",
             "detail": "Build workspace (default)",
             "type": "shell",

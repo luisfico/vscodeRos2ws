@@ -89,3 +89,24 @@ VSCode will build the dockerfile inside of `.devcontainer` for you.  If you open
    1. If you are using a `ros2.repos` file, import the contents `Terminal->Run Task..->import from workspace file`
 2. Install dependencies `Terminal->Run Task..->install dependencies`
 3. Develop!
+
+
+
+### ---------------- FAST USAGE---------------- !!!
+
+1. Install dependencies 
+
+```
+    sudo apt update -y && sudo apt install gitk -y && sudo apt install ~nros-foxy-rqt* -y && sudo apt install gedit -y
+```
+2. Install dependencies of ROS packages `Terminal->Run Task..->install dependencies`
+
+3. Build ros project `Terminal->Run Task..->fast build`
+
+4. Run demo (Publisher/Subscriber) :
+
+```
+    ros2 run simple_publisher publisher_main
+```
+```
+    ros2 run simple_subscriber subscriber_main
